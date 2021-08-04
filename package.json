@@ -1,0 +1,29 @@
+{
+  "private": false,
+  "name": "vue-wireframe",
+  "version": "1.0.0",
+  "description": "Not sure what layout to use? Use wireframes as placeholders for content with the ability to inject your own CSS.",
+  "main": "./dist/index.common.js",
+  "scripts": {
+    "dev": "vue serve Wireframe.vue",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "bili --name index --plugin vue --vue.css false"
+  },
+  "author": "Mikey Lau",
+  "license": "ISC",
+  "dependencies": {
+    "vue": "^2.6.14"
+  },
+  "files": [
+    "dist/*",
+    "src/*",
+    "public/*",
+    "*.json",
+    "*.js"
+  ],
+  "devDependencies": {
+    "bili": "^5.0.5",
+    "rollup-plugin-vue": "^6.0.0",
+    "vue-template-compiler": "^2.6.14"
+  }
+}
