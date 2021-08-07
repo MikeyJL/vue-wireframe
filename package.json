@@ -1,13 +1,11 @@
 {
   "private": false,
   "name": "vue-wireframe",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Not sure what layout to use? Use wireframes as placeholders for content with the ability to inject your own CSS.",
-  "main": "./dist/index.common.js",
   "scripts": {
     "dev": "vue serve Wireframe.vue",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "bili --name index --plugin vue --vue.css false"
+    "build": "webpack --config config/webpack.config.js"
   },
   "author": "Mikey Lau",
   "license": "ISC",
@@ -22,8 +20,22 @@
     "*.js"
   ],
   "devDependencies": {
-    "bili": "^5.0.5",
-    "rollup-plugin-vue": "^6.0.0",
-    "vue-template-compiler": "^2.6.14"
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.2",
+    "babel-preset-env": "^1.7.0",
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.2.0",
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-vue": "^7.15.1",
+    "file-loader": "^6.2.0",
+    "vue-loader": "^15.9.8",
+    "vue-template-compiler": "^2.6.14",
+    "webpack": "^5.49.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
   }
 }

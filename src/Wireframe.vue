@@ -49,7 +49,7 @@ export default {
 }
 .wireframe {
   padding: 1rem;
-  background-color: rgb(165, 165, 165); 
+  background-color: rgb(165, 165, 165);
   border-radius: 10px;
 }
 .wireframe form {
